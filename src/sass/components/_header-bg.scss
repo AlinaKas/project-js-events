@@ -5,35 +5,6 @@
   background-position: center;
   background-size: cover;
 
-  .logo-bg {
-    transform-origin: left top;
-    border-bottom-right-radius: 100%;
-    background: linear-gradient(
-      136.07deg,
-      rgba(196, 196, 196, 0.03) 10.75%,
-      rgba(196, 196, 196, 0) 92.33%
-    );
-    backdrop-filter: blur(30px);
-    position: absolute;
-    padding: 20px 30px 60px 40px;
-
-    @media screen and (max-width: $mobile-max) {
-      transform: scale(0.6);
-    }
-
-    @media screen and (min-width: $desktop) {
-      transform: scale(1.4);
-    }
-
-    .logo {
-      width: 100px;
-      height: 50px;
-      background-size: 100%, 100%;
-      background-repeat: no-repeat;
-      background-image: url('../images/logo.svg');
-    }
-  }
-
   @media screen and (max-width: $mobile-max) {
     background-image: linear-gradient(to right, rgba(11, 11, 11, 0.5), rgba(11, 11, 11, 0.5)),
       url('../images/mobile_pic.png');
@@ -81,5 +52,55 @@
     height: 102px;
     bottom: 0;
     background: linear-gradient(transparent, 20%, rgba(13, 13, 13, 0.19), rgba(14, 14, 14, 0.8));
+  }
+}
+
+.logo {
+  position: absolute;
+  width: 60px;
+  left: 20px;
+  top: 20px;
+
+  @media screen and (min-width: $tablet) {
+    left: 35px;
+    top: 35px;
+    width: 100px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    left: 45px;
+    top: 45px;
+    width: 239px;
+  }
+}
+
+.logo-bg {
+  display: block;
+  position: absolute;
+
+  width: 213.97px;
+  height: 180px;
+  left: -107.49px;
+  top: -90px;
+  background-image: linear-gradient(
+    136.07deg,
+    rgba(196, 196, 196, 0.03) 10.75%,
+    rgba(196, 196, 196, 0) 92.33%
+  );
+  backdrop-filter: blur(30px);
+  border-radius: 90%;
+
+  @media screen and (min-width: 768px) {
+    width: 359px;
+    height: 302px;
+    left: -180px;
+    top: -151px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 477px;
+    height: 402px;
+    left: -238px;
+    top: -201px;
   }
 }

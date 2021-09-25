@@ -70,6 +70,7 @@
     }
 
     .cards-icons {
+      color: var(--accent-color);
       animation-name: changeScale;
       animation-duration: 2s;
       animation-timing-function: linear;

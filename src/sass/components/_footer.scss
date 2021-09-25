@@ -31,7 +31,7 @@
   margin-right: 7px;
 }
 .footer-icons {
-  color: #d12424;
+  color: var(--accent-color);
   margin-left: 7px;
   margin-right: 7px;
 
@@ -46,7 +46,7 @@
   }
 
   50% {
-    transform: scale(1.7);
+    transform: scale(1.5);
   }
 
   100% {

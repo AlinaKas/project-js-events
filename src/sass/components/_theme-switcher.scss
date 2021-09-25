@@ -9,8 +9,8 @@ body.light-theme {
   background: linear-gradient(
     180deg,
     rgba(236, 191, 236, 0.521) 7%,
-    rgba(244, 237, 245, 0.774) 92%,
-    rgba(90, 68, 90, 0.712)
+    rgba(244, 237, 245, 0.801) 92%,
+    rgba(22, 11, 22, 0.712)
   );
 
   .header-bg {
@@ -20,8 +20,8 @@ body.light-theme {
         30%,
         rgba(167, 161, 161, 0.753),
         55%,
-        rgba(37, 33, 33, 0.575),
-        85%,
+        rgba(56, 49, 49, 0.411),
+        90%,
         #a80b8b98
       ),
       url('../images/mobile_pic-light@1x.png');
@@ -37,8 +37,8 @@ body.light-theme {
           30%,
           rgba(167, 161, 161, 0.753),
           55%,
-          rgba(37, 33, 33, 0.575),
-          85%,
+          rgba(56, 49, 49, 0.411),
+          90%,
           #a80b8b98
         ),
         url('../images/mobile_pic-light@2x.png');
@@ -52,7 +52,7 @@ body.light-theme {
           rgba(167, 161, 161, 0.753),
           55%,
           rgba(37, 33, 33, 0.575),
-          85%,
+          80%,
           #a80b8b98
         ),
         url('../images/tablet_pic-light@1x.png');
@@ -69,7 +69,7 @@ body.light-theme {
             rgba(167, 161, 161, 0.753),
             55%,
             rgba(37, 33, 33, 0.575),
-            85%,
+            80%,
             #a80b8b98
           ),
           url('../images/tablet_pic-light@2x.png');
@@ -85,7 +85,7 @@ body.light-theme {
           rgba(167, 161, 161, 0.753),
           55%,
           rgba(37, 33, 33, 0.575),
-          85%,
+          80%,
           #a80b8b98
         ),
         url('../images/desktop_pic-light@1x.png');
@@ -102,7 +102,7 @@ body.light-theme {
             rgba(167, 161, 161, 0.753),
             55%,
             rgba(37, 33, 33, 0.575),
-            85%,
+            80%,
             #a80b8b98
           ),
           url('../images/desktop_pic-light@2x.png');

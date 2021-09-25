@@ -6,3 +6,4 @@ setTimeout(function() {
         preloader.classList.add('disable')
     }},1000)
 }
+

@@ -10,4 +10,5 @@ export function clearModalMarkup() {
   for (let i = 1; i < modalGallery.children.length; i++) {
     modalGallery.children[i].innerHTML = '';
   }
+
 }
