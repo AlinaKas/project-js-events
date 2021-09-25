@@ -13,7 +13,7 @@ import img10 from '../images/team/Dmitriy.jpg';
 export default [
   {
     fullName: 'Natalia Dobrovolskaya',
-    position: 'Team lead команды. Разметка и стили футера. Плюшка: Пушка-ракета "вверх".',
+    position: '• Team lead • Footer markup and styles • Button "UP"',
     photo: `${img1}`,
     Slack: '#',
     facebook: 'https://www.facebook.com/profile.php?id=100012840857670',
@@ -21,7 +21,7 @@ export default [
   },
   {
     fullName: 'Mariia Slobozhan',
-    position: 'Scrum master команды. Логика строки поиска по названию события, а также анимация отображения событий при первом посещении главной страницы.',
+    position: '• Scrum master • API requests logic for searching events by keyword and country name • First time load page',
     photo: `${img2}`,
     Slack: '#',
     facebook: 'https://www.facebook.com/maryia.slobozhan',
@@ -29,7 +29,7 @@ export default [
   },
   {
     fullName: 'Andrey Galkin',
-    position: 'Логика подгрузки и отображения данных о событии в открытом модальном окне, закрытие модального окна при нажатии на крестик и за ее пределы.',
+    position: '• Open/close modal logic • API request for certain event details',
     photo: `${img3}`,
     Slack: '#',
     facebook:'https://www.facebook.com/profile.php?id=100023446086964',
@@ -37,7 +37,7 @@ export default [
   },
   {
     fullName: 'Alina Kasianova',
-    position: 'Стили и разметка контейнера для карточек и стили карточки , анимация и плюшки на карточке событий, favicon.',
+    position: '• Main container styles • Event card styles and animation • Favicon • Theme-switcher logic and styles',
     photo: `${img4}`,
     Slack: '#',
     facebook: '',
@@ -45,7 +45,7 @@ export default [
   },
   {
     fullName: 'Sergey Yakimov',
-    position: 'Разметка и стили пагинации, логика пагинации, переход по страницам, анимация пагинации.',
+     position: '• Pagination logic and styles',
     photo: `${img5}`,
     Slack: '#',
     facebook: '',
@@ -53,7 +53,7 @@ export default [
   },
   {
     fullName: 'Uliya Kucherenko',
-    position: 'Отрисовка бекграунда, отрисовка логотипа, отрисовка заголовка. Разметка строк поиска. Анимация заголовка.',
+    position: '• Header styles • Title animation',
     photo: `${img6}`,
     Slack: '#',
     facebook: 'https://www.facebook.com/OwlJule',
@@ -61,7 +61,7 @@ export default [
   },
   {
     fullName: 'Yana Yermak',
-    position: "Разметка одной карточки события. Разметка, стилизация, анимация модального окна команды. Плюшки.",
+    position: '• Event card markup • Team madal logic and styles',
     photo: `${img7}`,
     Slack: '#',
     facebook:'https://www.facebook.com/profile.php?id=100003188104881',
@@ -69,7 +69,7 @@ export default [
   },
   {
     fullName: 'Ihor Rudniev',
-    position: "Логика выпадашки с выбором страны, стилизация строки выбора страны. Логика строки поиска по названию страны.",
+    position: '• Input styles',
     photo: `${img8}`,
     Slack: '',
     facebook: 'https://www.facebook.com/IhorRudniev',
@@ -77,7 +77,7 @@ export default [
   },
   {
     fullName: 'Naira Kazeian',
-    position: "Подготовка для работы проэкта : базовые стили, подключение шрифтов, предварительная разметка рабочей области. Стилизация и логика переключателя темы.",
+    position: '• Basic styles and variables • Theme-switcher logic and styles',
     photo: `${img9}`,
     Slack: '#',
     facebook: 'https://www.facebook.com/naira.kazeyan',
@@ -85,11 +85,11 @@ export default [
   },
   {
     fullName: 'Dmitriy Shevchuk',
-    position: "Разметка и стили модалки конкретного события, размещение ссылок на событие в кнопках покупки билетов.",
+     position: '• Event modal styles • Buy-tickets-link logic',
     photo: `${img10}`,
     Slack: '#',
     facebook:'https://www.facebook.com/dmitrij.shevchuk.9',
     Git: 'https://github.com/AmbassadorOfHappiness',
   }
-
 ];
+

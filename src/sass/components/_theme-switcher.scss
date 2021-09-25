@@ -6,81 +6,53 @@ body.dark-theme {
 body.light-theme {
   color: var(--dark-color);
   background-image: var(--white-color);
-  @media screen and (min-width: $desktop) {
-    max-width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: linear-gradient(to bottom, transparent, 80%, #682c5e56),
-      url('../images/noise-desktop.png');
-    background-repeat: repeat-y;
-    background-position: top;
-    background-size: cover;
+  background: linear-gradient(
+    180deg,
+    rgba(236, 191, 236, 0.521) 7%,
+    rgba(244, 237, 245, 0.774) 92%,
+    rgba(90, 68, 90, 0.712)
+  );
 
-    // @media (min-device-pixel-ratio: 2),
-    //   (-webkit-min-device-pixel-ratio: 2),
-    //   (min-resolution: 192dpi),
-    //   (min-resolution: 2dppx) {
-    //   background-image: linear-gradient(to bottom, transparent, 80%, #682c5e56),
-    //     url('../images/bg-desktop-light@2x.png');
-
-    // }
-  }
-  @media screen and (min-width: $tablet) and(max-width: $tablet-max) {
-    max-width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: linear-gradient(to bottom, transparent, 80%, #682c5e56),
-      url('../images/noise-tablet.png');
-    background-repeat: repeat-y;
-    background-position: top;
-    background-size: cover;
-
-    // @media (min-device-pixel-ratio: 2),
-    //   (-webkit-min-device-pixel-ratio: 2),
-    //   (min-resolution: 192dpi),
-    //   (min-resolution: 2dppx) {
-    //   background: linear-gradient(to bottom, transparent, 80%, #682c5e56),
-    //     url('../images/bg-tablet-light@2x.png');
-    // }
-  }
-
-  @media screen and (max-width: $mobile-max) {
-    max-width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: linear-gradient(to bottom, transparent, 80%, #682c5e56),
-      url('../images/noise-mobile.png');
-    background-repeat: repeat-y;
-    background-position: top;
-    background-size: cover;
-
-    //   @media (min-device-pixel-ratio: 2),
-    //     (-webkit-min-device-pixel-ratio: 2),
-    //     (min-resolution: 192dpi),
-    //     (min-resolution: 2dppx) {
-    //     background-image: url('../images/bg-mobile-light@2x.png');
-    //   }
-  }
+  max-width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-repeat: repeat-y;
+  background-position: top;
+  background-size: cover;
 
   .header-bg {
-    &:after {
-      background: linear-gradient(transparent, 20%, rgba(13, 13, 13, 0.19), rgb(255 255 255 / 80%));
-    }
-    @media screen and (max-width: $mobile-max) {
-      background-image: linear-gradient(to bottom, transparent, 80%, #e9dae6a1),
-        url('../images/mobile_pic-light@1x.png');
-      height: 364px;
+    background-image: linear-gradient(
+        to bottom,
+        rgb(26, 22, 22),
+        30%,
+        rgba(167, 161, 161, 0.753),
+        55%,
+        rgba(37, 33, 33, 0.575),
+        85%,
+        #a80b8b98
+      ),
+      url('../images/mobile_pic-light@1x.png');
+    height: 364px;
 
-      @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url('../images/mobile_pic-light@2x.png');
-      }
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/mobile_pic-light@2x.png');
     }
 
     @media screen and (min-width: $tablet) {
-      background-image: url('../images/tablet_pic-light@1x.png');
+      background-image: linear-gradient(
+          to bottom,
+          rgb(26, 22, 22),
+          30%,
+          rgba(167, 161, 161, 0.753),
+          55%,
+          rgba(37, 33, 33, 0.575),
+          85%,
+          #a80b8b98
+        ),
+        url('../images/tablet_pic-light@1x.png');
       height: 364px;
 
       @media (min-device-pixel-ratio: 2),
@@ -93,7 +65,16 @@ body.light-theme {
 
     @media screen and (min-width: $desktop) {
       max-width: 100%;
-      background-image: linear-gradient(to bottom, transparent, 80%, #e9dae6a1),
+      background-image: linear-gradient(
+          to bottom,
+          rgb(26, 22, 22),
+          30%,
+          rgba(167, 161, 161, 0.753),
+          55%,
+          rgba(37, 33, 33, 0.575),
+          85%,
+          #a80b8b98
+        ),
         url('../images/desktop_pic-light@1x.png');
       height: 466px;
 
@@ -105,12 +86,24 @@ body.light-theme {
       }
     }
   }
+  .gallery-wrapper {
+    top: 15px;
+    @media screen and (min-width: $tablet) {
+      top: 25px;
+    }
+    @media screen and (min-width: $desktop) {
+      top: 30px;
+    }
+  }
 
   .footer-wrapper {
     color: var(--dark-color);
   }
+  .borders {
+    border-left: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+  }
 }
-
 /*Button options*/
 
 .toolbar {
@@ -160,12 +153,12 @@ body.light-theme {
 .theme-switch__track {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 3px;
   width: 100%;
   height: 100%;
   color: transparent;
   user-select: none;
-  background-color: rgb(222, 60, 228);
+  background-color: var(--accent-color);
   border-radius: inherit;
   z-index: 1;
   cursor: pointer;
@@ -180,20 +173,19 @@ body.light-theme {
   z-index: 2;
   pointer-events: none;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
-  transform: translateX(3px);
+  transform: translate(3px, 3px);
   transition: transform 250ms var(--timing-function);
 }
 
 .theme-switch__toggle:checked + .theme-switch__track {
-  background-color: #5d5d5f;
+  background-color: #8a8a91;
 }
 
 .theme-switch__toggle:checked ~ .theme-switch__marker {
-  transform: translateX(35px);
+  transform: translate(35px, 3px);
 }
 
 .theme-switch__toggle:focus + .theme-switch__track,
 .theme-switch__toggle:active + .theme-switch__track {
-  // box-shadow: 0 0 0 3px #2196f3;
   box-shadow: 0 0 0 3px var(--accent-color);
 }
