@@ -1,0 +1,51 @@
+
+.header-position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.header-sleng{  
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 900;  
+  line-height: 1.21;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  text-align: center;
+
+  @media screen and (max-width: $mobile-max) {
+    font-size: 18px;
+    padding-top: 78px;
+    padding-bottom: 25px;
+  }
+  @media screen and (min-width: $tablet) {
+    font-size: 30px;
+    padding-top: 40px;
+    padding-bottom: 27px;
+  }
+  @media screen and (min-width: $desktop) {  
+    font-size: 50px;
+    padding-top: 40px;
+    padding-bottom: 52px;
+  }
+}
+
+.letter-animation {
+  transition: all .3s ease-in;
+  animation: letter-animation 1 2s;
+}
+
+@keyframes letter-animation {
+  0% {
+    color: transparent;
+    // transform: scale(0);
+    // opacity: 0;
+  }
+  100% {
+    color: inherit;
+    // transform: scale(1);
+    // opacity: 1;
+  }
+}

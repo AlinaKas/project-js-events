@@ -1,0 +1,32 @@
+/*Главный файл стилей.*/
+
+// Стили для файла с примером HTML-фрагмента
+// Добавляем так => @import './example';
+
+/*Базовые стили */
+
+@import './utils/breakpoints';
+@import './base/common';
+@import './utils/fonts';
+@import './utils/variables';
+@import './components/theme-switcher';
+/*Шапка приложения*/
+
+@import './components/header';
+@import './components/header-input';
+@import './components/header-bg';
+
+/*main (контент страницы)*/
+@import './components/background';
+@import './components/gallery';
+@import './components/preloader';
+/*footer*/
+@import './components/footer';
+@import './components/modal-team';
+@import './components/up-btn';
+
+/*модальное окно */
+@import './components/modal';
+
+/*pagination*/
+@import './components/pagination';

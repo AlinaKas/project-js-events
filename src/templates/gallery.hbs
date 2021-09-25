@@ -1,0 +1,14 @@
+  {{#each this._embedded.events}}
+  <li class='event-card' id={{id}}>
+<div class="event-image__wrapper">
+    <img class='event-image' src='{{images.7.url}}' alt='{{name}}'/>
+</div>
+<div class="event-content">
+    <h3 class='event-title'>{{name}}</h3>
+    <p class='event-date'>{{dates.start.localDate}}</p>
+    <p class="event-place">
+        <a href="https://maps.google.com?saddr=Current+Location&daddr={{_embedded.venues.0.location.latitude}},{{_embedded.venues.0.location.longitude}}" class="link" target="_blank"> <span class="material-icons md-12 cards-icons">room</span> {{_embedded.venues.0.name}}</a>
+    </p>
+</div>
+  </li>
+  {{/each}}

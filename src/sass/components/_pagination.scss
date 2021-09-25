@@ -1,0 +1,74 @@
+#tui-pagination-container {
+  width: 100%;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-left: 0;
+  margin-right: 0;
+  @media screen and (max-width: $mobile-max) {
+    
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.tui-page-btn {
+  width: 30px;
+  height: 30px;
+  //color: var(--white-color);
+  color: inherit;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    // оставить по желанию либо так либо расскоментировать:)
+    // border: 1px solid var(--accent-color);
+    // border-radius: 10px 0 10px 0;
+
+    @media screen and (max-width: $mobile-max) {
+    
+      padding-left: 3px;
+      padding-right: 3px;
+    }
+  
+    @media screen and (min-width: $tablet) {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+  }
+}
+
+.tui-is-selected {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 10px 0 10px 0;
+  opacity: 1;
+}
+
+.tui-is-disabled {
+  opacity: 0;
+}
+
+strong {
+  cursor: default;
+}
+
+.is-hidden {
+  opacity: 0;
+}
+
+.is-open {
+  opacity: 1;
+}
+
+

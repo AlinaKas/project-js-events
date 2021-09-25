@@ -1,0 +1,12 @@
+import Pagination from './js/pagination.js';
+import './sass/main.scss';
+import { onLoadPage, onEventSearch } from './js/event_search';
+import './js/header-animation.js';
+import { onCountrytSearch } from './js/event_search_country';
+import fetchEventsByName from './js/event_search';
+import './js/team.js';
+import './js/team-modal';
+import './templates/teamModal.hbs';
+import './js/preloader';
+// import "../node_modules/select-pure/lib/index";
+import '../node_modules/select-pure/lib/index.js';

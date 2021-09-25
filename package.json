@@ -1,0 +1,40 @@
+{
+  "name": "parcel-project-template",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://AlinaKas.github.io/project-js-events",
+  "scripts": {
+    "dev": "parcel src/*.html -p 5959",
+    "build": "parcel build src/*.html --public-url /project-js-events/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+  },
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+  },
+  "devDependencies": {
+    "@pnotify/core": "^5.2.0",
+    "@pnotify/mobile": "^5.2.0",
+    "gh-pages": "^3.2.3",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "axios": "^0.21.4",
+    "basiclightbox": "^5.0.4",
+    "handlebars": "^4.7.7",
+    "lodash.debounce": "^4.0.8",
+    "select-pure": "^2.1.1-alpha.1",
+    "tui-pagination": "^3.4.1"
+  }
+}

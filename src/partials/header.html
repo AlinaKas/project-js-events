@@ -1,0 +1,42 @@
+<header class="header-bg">
+  <div class="logo-bg">
+    <div class="logo"></div>
+  </div>
+  <div class="container header-position">
+    <h1 class="header-sleng">FIND BEST EVENTS <br> AROUND THE WORLD</h1>
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+
+    <form class="form-container" autocomplete="on" novalidate>
+      <div class="input-area">
+        <input class=" input-container search-event-area" type="text" id="event" name="query_event" autocomplete="off"
+          placeholder="Start searching" required pattern="^[a-zA-Z]+$">
+        <div class="input-area_icons-container">
+          <span class="material-icons input-icons">search</span>
+        </div>
+      </div>
+<!-- 
+      <div class="input-area input--position">
+        <select name="country"  id="countries-list" class="countries-list input-container search-event-area">
+          <option value=""  class="label">Choose country</option>
+        </select>
+
+        <div class="input-area_icons-container  input_arrow_icon icon--rotate">
+          <span class="material-icons input-icons">arrow_drop_down</span>
+        </div>
+      </div> -->
+
+      <div class="input-area input--position">
+        <select-pure name="country" id="countries-list">
+          <option-pure value="" disabled hidden class="label">Choose country</option-pure>
+        </select-pure>
+      
+        <div class="input-area_icons-container icon--rotate">
+          <span class="material-icons input-icons">arrow_drop_down</span>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</header>

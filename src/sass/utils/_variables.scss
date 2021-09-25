@@ -1,0 +1,28 @@
+/*Палитра
+цвет текста (белый) в результате поиска - #ffffff;
+цвет текста в модалке (черный) и фона на результате поиска - #0e0e0e;
+выделение цветом текст (заголовок, названия ивентов, страница в пагинации, в модалке заголовок) - #dc56c5;
+цвет кнопка закрытия, кнопка "MORE ABOUT AUTHORS", фон кнопок "BUY TICKETS" - #4c00fe;
+текст кнопок -#ffffff;
+текст плейсхолдера - #939393;
+фон плейсхолдера - rgba(255, 255, 255, 0.2);
+фон модалки - #FFF2FD;
+фон оверлея - rgba(32, 13, 29, 0.6);
+
+*/
+
+:root {
+  --white-color: #ffffff;
+  --dark-color: #0e0e0e;
+  --accent-color: #dc56c5;
+  --button: #4c00fe;
+  --footer-color: #939393;
+  --placeholder-text-color: #939393;
+  --placeholder-bg-color: rgba(255, 255, 255, 0.2);
+  --list-color: #cccccc;
+  --modal-bg-color: #fff2fd;
+  --overlay-color: rgba(32, 13, 29, 0.6);
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --modal-text-color: #f39c12;
+
+}

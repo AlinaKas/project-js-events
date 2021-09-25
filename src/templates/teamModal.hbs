@@ -1,0 +1,29 @@
+<div class='content'>
+  <button class='close'></button>
+  {{#each this}}
+    <figure class='modal-foto'>
+      <img src='{{photo}}' class='background' />
+      <img src='{{photo}}' alt={{fullName}} class='profile' />
+      <figcaption>
+        <h3 class="modal-title">{{fullName}}<p class="modal-text">{{position}}</p></h3>
+       <div class='icons'>
+          
+          <a href="{{ facebook}}"  aria-label="Страница Fecebook" target="_blank"
+                          rel="noopener noreferrer">
+                           <ion-icon name="logo-facebook"  class="icons-icon"></ion-icon>
+                          </a>
+                           <a href="{{Git}}"  aria-label="Страница Github" target="_blank"
+                          rel="noopener noreferrer">
+                      <ion-icon name="logo-github"  class="icons-icon" ></ion-icon>
+                      </a>
+                      <a href=""  aria-label="Страница Slack" target="_blank"
+                          rel="noopener noreferrer">
+                          <ion-icon name="logo-slack" class="icons-icon" ></ion-icon>
+          </a>
+
+
+        </div>
+      </figcaption>
+    </figure>
+  {{/each}}
+</div>
