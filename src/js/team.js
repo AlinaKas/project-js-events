@@ -61,7 +61,7 @@ export default [
   },
   {
     fullName: 'Yana Yermak',
-    position: '• Event card markup • Team madal logic and styles',
+    position: '• Event card markup • Team modal logic and styles',
     photo: `${img7}`,
     Slack: '#',
     facebook:'https://www.facebook.com/profile.php?id=100003188104881',
