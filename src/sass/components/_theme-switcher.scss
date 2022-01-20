@@ -109,15 +109,15 @@ body.light-theme {
       }
     }
   }
-  .gallery-wrapper {
-    top: 15px;
-    @media screen and (min-width: $tablet) {
-      top: 25px;
-    }
-    @media screen and (min-width: $desktop) {
-      top: 30px;
-    }
-  }
+  // .gallery-wrapper {
+  //   top: 15px;
+  //   @media screen and (min-width: $tablet) {
+  //     top: 25px;
+  //   }
+  //   @media screen and (min-width: $desktop) {
+  //     top: 20px;
+  //   }
+  // }
 
   .footer-wrapper {
     color: var(--dark-color);
