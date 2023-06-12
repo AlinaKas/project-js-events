@@ -1,3 +1,18 @@
+.modal_lb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: $desktop) {
+    justify-content: space-evenly;
+  }
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -13,13 +28,11 @@
   transform: scale(0);
 }
 
-
 .modal.is_open {
   opacity: 1;
   pointer-events: initial;
   transform: scale(1);
   transition: 0.8s ease-in-out;
-
 }
 
 .modal_overlay {
@@ -48,16 +61,19 @@
     width: 85%;
     height: 80%;
   }
-  @media screen and (min-width: $tablet) and (orientation: portrait){
+
+  @media screen and (min-width: $tablet) and (orientation: portrait) {
     width: 70%;
     height: 75%;
     border-radius: 300px 0;
   }
-  @media screen and (min-width: $tablet) and (orientation: landscape){
+
+  @media screen and (min-width: $tablet) and (orientation: landscape) {
     width: 75%;
     height: 90%;
     border-radius: 300px 0;
   }
+
   @media screen and (min-width: $desktop) {
     width: 55%;
     height: 95%;
@@ -93,50 +109,66 @@
 }
 
 .modal_wrap {
-  display: flex;
-  justify-content: space-around;
-  width: 90%;
-  flex-wrap: wrap;
-  margin: 0 auto;
-
-  @media screen and (min-width: $mobile) {
-    width: 100%;
-  }
+  padding-top: 30px;
 
   @media screen and (min-width: $tablet) {
-    width: 85%;
+    padding: 70px 40px 70px 40px;
   }
+
   @media screen and (min-width: $desktop) {
-    width: 90%;
+    padding: 90px 40px 90px 40px;
   }
+}
+
+.img_and_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .modal_more_button {
   z-index: 3;
-  height: 40px;
-  font-size: 16px;
+  padding: 3px 10px 3px 10px;
+  font-size: 14px;
   font-weight: 500;
   border: 2px solid var(--button);
   border-radius: 5px;
   background-color: inherit;
   color: var(--button);
-  margin-top: 20px;
 
   @media screen and (min-width: $tablet) {
-    width: 255px;
+    padding: 5px 10px 5px 10px;
+    font-size: 16px;
+  }
+}
+
+.more_btn_container {
+  margin-top: 20px;
+  width: 145px;
+
+  @media screen and (min-width: $tablet) {
+    width: 300px;
   }
 }
 
 .modal_more_button:hover {
   border: 1px solid var(--accent-color);
+  color: var(--accent-color);
 }
 
 .modal-title {
   margin-bottom: 2%;
   color: var(--accent-color);
   font-weight: 600;
-  font-size: 18px;
-  line-height: 1.2;
+  font-size: 14px;
+  line-height: 1.1;
+
+  @media screen and (min-width: $tablet) {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+  }
 
   @media screen and (min-width: $desktop) {
     font-size: 22px;
@@ -146,9 +178,15 @@
 
 .modal_text {
   color: var(--dark-color);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 1.22;
+  line-height: 1.18;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.22;
+  }
 
   @media screen and (min-width: $desktop) {
     font-size: 15px;
@@ -192,8 +230,8 @@
 .modal_buy_btn {
   position: relative;
   width: 145px;
-  height: 40px;
-  font-size: 16px;
+  height: 30px;
+  font-size: 14px;
   line-height: 1.25;
   border: none;
   border-radius: 5px;
@@ -201,6 +239,11 @@
   cursor: pointer;
   color: white;
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    height: 40px;
+    font-size: 16px;
+  }
 }
 
 .modal_buy_btn:hover {
@@ -209,46 +252,43 @@
 
 .modal_content {
   z-index: 11;
-  width: 243px;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
+  text-align: center;
 
-  @media screen and (min-width: $mobile) {
-    text-align: center;
-    width: 78%;
-  }
   @media screen and (min-width: $tablet) {
-    text-align: inherit;
-    width: 40%;
+    max-width: 200px;
   }
+
   @media screen and (min-width: $desktop) {
-    width: 38%;
-    text-align: inherit;
+    max-width: 300px;
   }
 }
 
 .img-card_image_small {
-  width: 102px;
-  height: 102px;
-  display: block;
+  display: none;
   margin: 1% auto 4%;
   border-radius: 50%;
   object-fit: cover;
 
   @media screen and (min-width: $mobile) {
+    display: none;
     width: 70px;
     height: 70px;
     margin: 3% auto 4%;
   }
 
-  @media screen and (min-width: $tablet) and (orientation: portrait){
-    width: 70px;
-    height: 70px;
+  @media screen and (min-width: $tablet) {
+    display: block;
+    width: 200px;
+    height: 200px;
     margin: 5% auto 8%;
   }
+
   @media screen and (min-width: $desktop) {
-    width: 132px;
-    height: 132px;
+    width: 300px;
+    height: 300px;
   }
 }
 
@@ -262,26 +302,4 @@
   @media screen and (min-width: $tablet) {
     margin-right: 13px;
   }
-}
-
-.modal_img {
-  @media screen and (max-width: $mobile-max)  {
-    display: none;
-  }
-  @media screen and (min-width: $tablet) and (orientation: portrait) {
-    width: 38%;
-    height: 40vh;
-  }
-  @media screen and (min-width: $desktop) {
-    width: 40%;
-    height: 60vh;
-  }
-}
-
-.img-card_image {
-  border-radius: 0;
-  margin-bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
 }
