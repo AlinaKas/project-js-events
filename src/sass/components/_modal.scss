@@ -175,23 +175,30 @@ position: absolute;
 }
 }
 
-.modal_text.info {
-  position: relative;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 40px;
-  word-wrap: break-word;
-  border-radius: 5px;
-}
+// .modal_text.info {
+//   position: relative;
+//   overflow-y: scroll;
+//   overflow-x: hidden;
+//   height: 40px;
+//   word-wrap: break-word;
+//   border-radius: 5px;
+// }
 
 .modal_text.wrap_price {
-  display: flex;
-  justify-content: start;
-  align-items: center;
+    display: flex;
+  @media screen and (min-width: $tablet) {
+        justify-content: start;
+        align-items: center;
+    }
 }
+
 .modal_icon{
+  margin-left: 25px;
+  margin-right: 10px;
+  @media screen and (min-width: $tablet) {
   margin-right: 5px;
-}
+  margin-left: 0;
+}}
 
 
 .modal-container:not(:last-child) {

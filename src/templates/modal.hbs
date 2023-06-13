@@ -2,15 +2,15 @@
     <img src='{{images.3.url}}' alt='{{name}}' class='img-card_image_small' />
     <div class='modal_wrap'>
         <div class='modal_img'>
-            <img src='{{images.2.url}}' alt='{{name}}' class='img-card_image' />
+            <img src='{{images.7.url}}' alt='{{name}}' class='img-card_image' />
         </div>
         <div class="modal_content">
             <div class='modal-container'>
                 <h2 class='modal-title'>INFO</h2>
-                {{#if info}}
-                <p class='modal_text info'>{{info}}</p>
+                {{#if name}}
+                <p class='modal_text info'>{{name}}</p>
                 {{else}}
-                <p class='modal_text'>No Information</p>
+                <p class='modal_text'>------------</p>
                 {{/if}}
             </div>
             <div class='modal-container'>
@@ -25,7 +25,12 @@
             </div>
             <div class='modal-container'>
                 <h2 class='modal-title'>WHO</h2>
-                <p class='modal_text'>{{name}}</p>
+                <p class='modal_text'>{{#if _embedded.attractions}}
+                {{#with _embedded.attractions.[0]}}{{name}}{{/with}}
+                {{else}}
+                <p class='modal_text'>------------</p>
+                {{/if}}
+                </p>
             </div>
             <div class='modal-container btn-container'>
                 <h2 class='modal-title'>PRICES</h2>
