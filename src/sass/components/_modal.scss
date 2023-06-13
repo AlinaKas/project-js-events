@@ -72,26 +72,19 @@ position: absolute;
   position: absolute;
   top: 40px;
   right: 30px;
-  width: 17px;
-  height: 17px;
   border: none;
   background-color: inherit;
   color: var(--button);
   cursor: pointer;
   outline: none;
-  z-index: 11;
-
-  @media screen and (min-width: $tablet) {
-   font-size:35px;
-   line-height: 2;
-  }
+  z-index: 12;
 }
 
 .modal_button:hover {
   color: var(--accent-color);
 }
 
-// done
+
 .modal_wrap {
   @media screen and(min-width: $tablet) {
     display: inline-flex;
@@ -186,7 +179,7 @@ position: absolute;
   position: relative;
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 38px;
+  height: 40px;
   word-wrap: break-word;
   border-radius: 5px;
 }
@@ -194,6 +187,10 @@ position: absolute;
 .modal_text.wrap_price {
   display: flex;
   justify-content: start;
+  align-items: center;
+}
+.modal_icon{
+  margin-right: 5px;
 }
 
 
