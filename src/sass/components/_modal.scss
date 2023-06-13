@@ -72,18 +72,26 @@ position: absolute;
   position: absolute;
   top: 40px;
   right: 30px;
+  width: 17px;
+  height: 17px;
   border: none;
   background-color: inherit;
   color: var(--button);
   cursor: pointer;
   outline: none;
   z-index: 11;
+
+  @media screen and (min-width: $tablet) {
+   font-size:35px;
+   line-height: 2;
+  }
 }
 
 .modal_button:hover {
   color: var(--accent-color);
 }
 
+// done
 .modal_wrap {
   @media screen and(min-width: $tablet) {
     display: inline-flex;
@@ -96,12 +104,12 @@ position: absolute;
     justify-content: center;
 
     @media screen and(min-width: $tablet) {
-      margin-top: 23px;
-      margin-bottom: 36px;
+      margin-top: 33px;
+      margin-bottom: 46px;
     }
 
     @media screen and(min-width: $desktop) {
-      margin-top: 33px;
+      margin-top: 35px;
       margin-bottom: 42px;
     }
 }
@@ -197,6 +205,7 @@ position: absolute;
   }
 }
 
+
 .modal_link_btn {
   margin-top: 4%;
 }
@@ -238,14 +247,15 @@ position: absolute;
 
 .modal_content {
   z-index: 11;
-  width: 280px;
-  @media screen and(min-width: $tablet){
-  }
-  margin-left: 30px;
-  @media screen and(min-width: $desktop) {
-    width: 450px;
-    margin-left: 60px;
-  }
+        @media screen and(min-width: $tablet){
+          width: 280px;
+          margin-left: 30px;
+        }
+
+        @media screen and(min-width: $desktop) {
+          width: 450px;
+          margin-left: 60px;
+        }
 }
 
 .img-card_image_small {
@@ -275,6 +285,7 @@ position: absolute;
     }
 }
 
+
 .modal_img {
 
     display: none;
@@ -294,6 +305,7 @@ position: absolute;
     }
 
 }
+
 
 .img-card_image {
     width: 100%;
