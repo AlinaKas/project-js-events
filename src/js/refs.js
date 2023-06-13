@@ -1,6 +1,6 @@
 const refs = {
   eventInput: document.querySelector('.search-event-area'),
-  eventInputCounry: document.querySelector('#countries-list'),
+  eventInputCountry: document.querySelector('#countries-list'),
   body: document.querySelector('body'),
   countryInput: document.querySelector('.search-country-area'),
   gallery: document.querySelector('.gallery'),
@@ -15,16 +15,14 @@ const refs = {
   prevPagBtn: document.querySelector('.tui-prev'),
   btnArrow: document.querySelector('.icon--rotate'),
   countryItem: document.querySelector('.countries-item'),
-  containnerCountries: document.querySelector('.containner-countries'),
+  containerCountries: document.querySelector('.containner-countries'),
   inputLineBottom: document.querySelector('add-line'),
   form: document.querySelector('.form-container'),
 };
 
-
-
 export const {
   eventInput,
-  eventInputCounry,
+  eventInputCountry,
   countryInput,
   gallery,
   modalGallery,
@@ -38,7 +36,8 @@ export const {
   prevPagBtn,
   btnArrow,
   countryItem,
-  containnerCountries,
+  containerCountries,
   inputLineBottom,
   dropdown,
-  form} = refs;
+  form,
+} = refs;

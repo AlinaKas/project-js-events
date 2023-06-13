@@ -1,7 +1,7 @@
 import { fetchEvents } from './api_service';
 import {
   countryInput,
-  eventInputCounry,
+  eventInputCountry,
   form,
   btnArrow,
   countryItem,
@@ -18,7 +18,7 @@ import 'select-pure';
 import { openModal } from './modal';
 
 const markupCountryList = listCountriesTpl(countriesList);
-eventInputCounry.insertAdjacentHTML('beforeend', markupCountryList);
+eventInputCountry.insertAdjacentHTML('beforeend', markupCountryList);
 form.addEventListener('change', onCountrytSearch);
 
 function renderModal(data) {
@@ -31,7 +31,7 @@ export async function onCountrytSearch(e) {
   e.stopPropagation();
 
   try {
-    state.country = eventInputCounry.value;
+    state.country = eventInputCountry.value;
     const data = await fetchEvents(state.query, state.page, state.classification, state.country);
     clearGalleryMarkup();
     createGalleryMarkup(data);
